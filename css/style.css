@@ -213,9 +213,8 @@ footer .footer-right {
 }
 
 /*タブレット用*/
-@media screen and (max-width: 960px) {
-
-}
+/*@media screen and (max-width: 960px) {
+}*/
 
 /*スマホ用*/
 @media screen and (max-width: 480px) {
@@ -223,7 +222,52 @@ footer .footer-right {
 		min-width: 375px;
 	}
 	/*header*/
+	.icon {
+		margin-left: 20px;
+	}
+
+	.icon .name {
+		display: none;
+	}
+
+	.header-right {
+		display: none;
+	}
 	/*welcome*/
+
+	.title {
+		font-size: 30px;
+	}
+
+	.guidline {
+		font-size: 24px;
+		margin-top: 30px;
+		font-weight: normal;
+	}
+
+	.btn-group {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		margin-top: 40px;
+	}
+
+	.btn {
+		height: 48px;
+		width: 140px;
+		margin-left: 0;
+		margin-top: 20px;
+		font-size: 24px;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+
+	.btn:first-child {
+		margin-top: 0;
+	}
+
+
+
 	/*curiculum*/
 	.subtitle {
 		font-size: 24px;
