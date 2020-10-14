@@ -219,5 +219,26 @@ footer .footer-right {
 
 /*スマホ用*/
 @media screen and (max-width: 480px) {
+	body {
+		min-width: 375px;
+	}
+	/*header*/
+	/*welcome*/
+	/*curiculum*/
+	.subtitle {
+		font-size: 24px;
+	}
 
+	.img-box {
+		flex-flow: column nowrap;
+	}
+
+	.img-box li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0;
+	}
+	/*contact*/
+	/*footer*/
 }
