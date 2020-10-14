@@ -185,3 +185,18 @@ margin-top: 16px;
 .contact .form {
 	margin: 50px 0 40px;
 }
+/*contactここまで*/
+
+footer {
+	background-color: #233f51;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+}
+
+footer .footer-right {
+	margin-right: 80px;
+}
