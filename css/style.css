@@ -187,6 +187,7 @@ margin-top: 16px;
 }
 /*contactここまで*/
 
+/*footer*/
 footer {
 	background-color: #233f51;
 	display: flex;
@@ -199,4 +200,24 @@ footer {
 
 footer .footer-right {
 	margin-right: 80px;
+}
+/*footerここまで*/
+
+/*レスポンシブ対応*/
+
+/*小型PC用*/
+@media screen and (max-width: 1280px) {
+	.img-box li {
+		margin-right: 30px;
+	}
+}
+
+/*タブレット用*/
+@media screen and (max-width: 960px) {
+
+}
+
+/*スマホ用*/
+@media screen and (max-width: 480px) {
+
 }
