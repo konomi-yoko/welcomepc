@@ -247,12 +247,12 @@ footer .footer-right {
 
 /*contact*/
 	.contact {
-		height: 510px;
+		height: 530px;
 	}
 
 	.contact .form {
 		flex-flow: column nowrap;
-		margin: 40px 0;
+		margin: 40px 0 35px;
 	}
 
 	.form .name , .form .email, .form .inquiry {
