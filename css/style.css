@@ -230,49 +230,42 @@ footer .footer-right {
 	/*curriculum*/
 	.img-box {
 	flex-wrap: wrap;
+	justify-content: space-around;
 	}
 
-.img-box li {
-	margin-right: 100px;
-	margin-bottom: 20px
-}
-
-.img-box li:nth-child(2n) {
-	margin-right: 0;
-}
-
-.img-box li:last-child {
-	margin-bottom: 0;
-}
-
-/*contact*/
-	.contact {
-		height: 530px;
+		.img-box li {
+		margin-top: 30px;
 	}
 
-	.contact .form {
+		.contact .form {
 		flex-flow: column nowrap;
-		margin: 40px 0 35px;
+		margin: 30px 0;
 	}
 
-	.form .name , .form .email, .form .inquiry {
+		.form .name , .form .email, .form .inquiry {
 		width: 80%;
 	}
 
-		.form-left {
+	.form .name , .form .email {
+		height: 30px;
+	}
+	.form .inquiry {
+		height: 60px;
+	}
+
+	.form-left {
 		margin-right: 0;
 	}
 
-		.form-right {
-		margin-top: 35px;
+	.form-right {
+		margin-top: 20px;
 	}
 
 	.contact button {
-	font-size: 24px;
-	padding: 5px 50px;
-}
+		font-size: 20px;
+		padding: 5px 40px; 
+	}
 
-}
 
 /*スマホ用*/
 @media screen and (max-width: 480px) {
