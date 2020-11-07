@@ -1,12 +1,21 @@
-$(function(){
+$(function() {
+  // ハンバーガーメニューが押された時
+  $('#toggle').on('click',function(){
+      $(this).toggleClass('on');
+      $('.js-drower').toggleClass('on');
 
-	$('#hamburger-btn').on('click',function(){
-	$(this).toggleClass('on');
-	});
+      let isActive = $(this).hasClass('on');
+      toggleDrower(isActive);
+  });
+});
 
-	$('#hamburger-btn').on('click',function(){
-	$('.menu-target').toggleClass('hide');
-	});
-
-	});
-
+//ハンバーガーメニューでドロップダウン
+  function toggleDrower(isActive) {
+    if (isActive) {
+      // onになっていた時、メニューを表示
+      $('#drower-bg').fadeIn(600);
+    } else {
+      // onを外した時、メニューを非表示
+      $('#drower-bg').fadeOut(600);
+    }
+  } 

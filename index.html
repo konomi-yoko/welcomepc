@@ -6,8 +6,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script defer src="./js/app.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -22,23 +20,19 @@
 				<li>新規登録</li>
 				<li>ログイン</li>
 		</ul>
-						<p id="hamburger-btn" class="js-hamburger hamburger">
-			<span></span>
-		</p>
+<!-- ハンバーガーメニュー -->
+    <div id="toggle" class="js-hamburger hamburger">
+      <span></span>
+    </div>
+    <!-- ドロワー -->
+    <div id="drower-bg"></div>
+    <ul class="drower js-drower">
+      <li class="js-register">新規登録</li>
+      <li class="js-login">ログイン</li>
+    </ul>
 
 	</header>
 	<!-- headerここまで -->
-
-<!-- navここから -->
-	<nav class="menu-target menu-nav hide">
-		<ul>
-			<li>新規登録</li>
-			<li>ログイン</li>
-		</ul>
-	</nav>
-
-
-<!-- navここまで -->
 
 
 <!-- welcome -->
@@ -118,8 +112,8 @@
 	</footer>
 
 	<!-- footerここまで -->
-
-<!-- 美味しいレストラン -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="./js/app.js"></script>
 
 </body>
 </html>

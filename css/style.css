@@ -47,11 +47,12 @@ header {
 	margin-right: 20px;
 }
 
+/* ハンバーガーメニュー */
 .hamburger {
-	display: none;
+  display: none;
   width: 28px;
-  height: 30px;
-  margin: 35px 30px 10px 0;
+  align-self: center;
+  margin-right: 20px;
 }
 
 .hamburger span:after,
@@ -62,7 +63,7 @@ header {
   top: -9px;
 }
 
-.hamburger span:after {
+.hamburger span:after{
   top: 9px;
 }
 
@@ -76,8 +77,8 @@ header {
 .hamburger span:before {
   width: 100%;
   height: 5px;
-  background-color: #ddd;
-  transition: all 0.5s; /*←アニメーション*/
+  background-color: #fff;
+  transition: all 0.5s;    /*←アニメーション*/
   backface-visibility: hidden;
   border-radius: 2px;
 }
@@ -93,17 +94,36 @@ header {
 .hamburger.on span:after {
   transform: rotate(-45deg) translate(7px, -8px);
 }
+/* ハンバーガーメニューここまで */
 
-/*----------header ここまで----------*/
-
-/*navここから*/
-
-.menu-target {
-	display: none;
+/* ドロワー */
+#drower-bg {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
 }
 
-/*navここまで*/
+.drower {
+  position: absolute;
+  top: 70px;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(8, 8, 8, .5);
+  right: -200px;
+}
 
+.drower.on {
+  right: 0;
+  transition-duration: 600ms;
+}
+
+/* ドロワー ここまで*/
+
+/*----------header ここまで----------*/
 
 /*Welcome*/
 .welcome {
@@ -342,13 +362,10 @@ footer .footer-right {
 		display: none;
 	}
 
-	.header-right {
-		display: none;
-	}
-
+ /* ハンバーガーメニュー */
 	.hamburger {
-	display: block;
-	}
+		display: block;
+}
 
 /*nav*/
 
